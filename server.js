@@ -5,6 +5,8 @@ const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
     console.log("Received Request");
     console.log(req.query.cookie);
+    console.log(req.query);
+    console.log(req.cookies);
     res.send("Heyy");
 });
 

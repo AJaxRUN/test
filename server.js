@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
     console.log(req.query.cookie);
     console.log(req.query);
     console.log(req.cookies);
+    console.log('Signed Cookies: ', req.signedCookies)
     res.send("Heyy");
 });
 
